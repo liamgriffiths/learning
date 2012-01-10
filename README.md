@@ -20,6 +20,6 @@ Why I'm proud of it
 Using Andrew Ng's notes and ch.4 of Programming Collective Intellegence to put this together I feel 
 like I have a pretty good understanding of how ANNs work now and how to use them successfully.  
 
-It actually works and I think it is a pretty clean implementation compared to some others I have seen.
-I decided to use numpy heavily for doing the linear algebra instead of a ton of loops. But of course
+I'm also proud because it actually works and I think it is a pretty clean implementation compared to some others 
+I have seen. I decided to use numpy heavily for doing the linear algebra instead of a ton of loops. But of course
 there is plenty of room for improvement.

@@ -15,7 +15,7 @@ class KNN:
         return np.linalg.norm(n)
 
     def predict(self, x, k=5):
-        """ make prediction based k neighbors """
+        """ make prediction based on k neighbors """
         # calculate the distance between features (x) and each example in the training set (X)
         similarities = (self.similarity(difference) for difference in (x - self.X))
         # sort list by similarity and and index them so we can reference the rows output

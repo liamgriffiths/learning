@@ -10,14 +10,10 @@ class KNN:
         self.Y = Y
         self.classes = classes
 
-    def similarity(self, n):
-        """ return euclidean distance """
-        return np.linalg.norm(n)
-
     def predict(self, x, k=5):
         """ make prediction based on k neighbors """
-        # calculate the distance between features (x) and each example in the training set (X)
-        similarities = (self.similarity(difference) for difference in (x - self.X))
+        # calculate the euclidean distance between features (x) and each example in the training set (X)
+        similarities = (np.linalg.norm(difference) for difference in (x - self.X))
         # sort list by similarity and and index them so we can reference the rows output
         indexed = [[index,similarity] for index,similarity in enumerate(similarities)]
         indexed.sort(key=lambda x: x[1])

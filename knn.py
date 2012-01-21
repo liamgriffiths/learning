@@ -26,8 +26,8 @@ class KNN:
         results = np.zeros(len(self.classes))
         for i in range(k):
             index = self.classes.index(self.Y[indexed[i][0]])
-            results[index] += 1
-        return results
+            results[index] += 1.0
+        return results / k
 
 
 def digits():
